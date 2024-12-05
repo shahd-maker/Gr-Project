@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeneCheck Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">BeneCheck</div>
+    </nav>
+
+    <div class="icon-container">
+        <div class="icon-item">
+            <a href="/verify">
+                <img src="{{ url_for('static', filename='img/verify_icon.png') }}" alt="Verify Identity">
+                <p>Verify Identity</p>
+            </a>
+        </div>
+        <div class="icon-item">
+            <a href="/beneficiaries">
+                <img src="{{ url_for('static', filename='img/beneficiaries_icon.png') }}" alt="Manage Beneficiaries">
+                <p>Manage Beneficiaries</p>
+            </a>
+        </div>
+        <div class="icon-item">
+            <a href="/aid_management">
+                <img src="{{ url_for('static', filename='img/aid_icon.png') }}" alt="Aid Management">
+                <p>Manage Aid</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

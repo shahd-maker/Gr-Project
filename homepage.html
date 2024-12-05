@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+   
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:  'Poppins', sans-serif;
+        }
+
+        body {
+          
+            background-color: #f5f5f5;
+        }
+
+        /* Header styling */
+        header {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar {
+    width: 100%; /* Make the navbar fill the width */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo and name to the left */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 60px; /* Adjusts the logo size */
+    margin-right: 10px; /* Adds some space between the logo and text */
+} 
+
+.website-name {
+    color: #fff; /* Adjust color for visibility */
+    font-size: 24px; /* Adjust the font size */
+    font-weight: 600;
+}
+
+/* Link Styles */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+        .header nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+            padding: 10px 20px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+
+        .header nav a:hover {
+            background-color: #0096FE;
+        
+        }
+         
+        .container {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            margin-left:130px;
+            align-items: center;
+            margin-top: 200px;
+            
+        }
+        .column {
+            
+            width: 30%;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            opacity: 0;
+            transform: translateY(70%);
+            animation: slideIn 0.5s forwards;
+            margin: 20px;
+        }
+        .column:nth-child(1) {
+            animation-name: slideInFromLeft;
+            background: linear-gradient(to right,#162c85,#29445f)
+        }
+        .column:nth-child(2) {
+            animation-name: slideInFromBottom;
+            background: linear-gradient(to right,#162c85,#29445f)
+        }
+        .column:nth-child(3) {
+            animation-name: slideInFromRight;
+            background: linear-gradient(to right,#162c85,#29445f)
+        }
+        @keyframes slideInFromBottom {
+            0% { opacity: 0; transform: translateY(70%); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInFromLeft {
+            0% { opacity: 0; transform: translateX(-70%); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInFromRight {
+            0% { opacity: 0; transform: translateX(70%); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        .content {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .content a {
+            text-decoration: none;
+            color: #0096FE;
+            font-weight: 300;
+        }
+
+    </style>
+<body>
+     
+    <header>
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="logo1.png" alt="Logo">
+            <h1>BeneCheck</h1>
+        </div>
+        
+        <!-- Navigation Links -->
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Log Out</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="column">
+            <img src="background.PNG" alt="Image 1" style="width:100%; height:auto;">
+            <div class="content">
+                <p>Brief description about column 1.</p>
+                <a href="page1.html">Learn More</a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="background.PNG" alt="Image 2" style="width:100%; height:auto;">
+            <div class="content">
+                <p>Brief description about column 2.</p>
+                <a href="page2.html">Learn More</a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="background.PNG" alt="Image 3" style="width:100%; height:auto;">
+            <div class="content">
+                <p>Brief description about column 3.</p>
+                <a href="page3.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

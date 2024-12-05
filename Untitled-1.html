@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{}
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Optional */
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #000; /* Optional */
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            color:white;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <div>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+        </div>
+        <button>Login</button>
+    </div>
+
+</body>
+</html>

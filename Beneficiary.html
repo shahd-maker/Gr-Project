@@ -1,0 +1,142 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <title>Beneficiary Table</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+           
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            height: 40px; /* Adjust logo size as needed */
+            margin-right: 10px;
+        }
+
+        .table-container {
+            margin-left: 10px;
+            overflow-x: auto;
+        }
+
+        .beneficiary-table {
+            width:auto;
+            border-collapse: collapse;
+            margin:auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 20px;
+            background-color: #fff;
+            align-content: center;
+        }
+
+        .beneficiary-table th,
+        .beneficiary-table td {
+            padding: 12px;
+            text-align: left;
+            /* border: 1px solid #ddd; */
+        }
+
+        .beneficiary-table th {
+            background-color: #333; /* Darker header */
+            color: white;
+        }
+
+        .beneficiary-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .action-btn {
+            padding: 6px 12px;
+            background-color: #007bff; /* Blue */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .action-btn:hover {
+            background-color: #0056b3; /* Darker Blue */
+        }
+
+        .photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo1.png" alt="Logo"> <!-- Replace with your logo file -->
+        <!-- <h1>Beneficiary Management</h1> -->
+    </div>
+
+    <div class="table-container">
+        <button class="add-btn">Add Beneficiary</button>
+        <table class="beneficiary-table">
+            <thead>
+                <tr>
+                    <th>Beneficiary ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>State</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Photo</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>30</td>
+                    <td>Male</td>
+                    <td>California</td>
+                    <td>123 Main St, City</td>
+                    <td>(123) 456-7890</td>
+                    <td><img src="Image_4.PNG" alt="John Doe" class="photo"></td>
+                                  <td>
+                                                                <button class="action-btn"><ion-icon name="eye"></ion-icon></button>
+                                                                <button class="action-btn"><ion-icon name="create"></ion-icon></ion-icon></button>
+                                                                <button class="action-btn"><ion-icon name="trash"></ion-icon></button>
+                                                            </td></button>
+                       </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jane Smith</td>
+                    <td>28</td>
+                    <td>Female</td>
+                    <td>New York</td>
+                    <td>456 Elm St, City</td>
+                    <td>(987) 654-3210</td>
+                    <td><img src="Image_4.PNG" alt="Jane Smith" class="photo"></td>
+                    <td>
+                        <button class="action-btn"><ion-icon name="eye"></ion-icon></button>
+                        <button class="action-btn"><ion-icon name="create"></ion-icon></ion-icon></button>
+                        <button class="action-btn"><ion-icon name="trash"></ion-icon></button>
+                    </td></button>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("background.PNG");
+    background-position: center;
+    background-size: cover;
+    color:#fff;
+   
+}
+
+/* Header and Logo Styles */
+header {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar {
+    width: 100%; /* Make the navbar fill the width */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo and name to the left */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px; /* Adjusts the logo size */
+    margin-right: 10px; /* Adds some space between the logo and text */
+}
+
+.website-name {
+    color: #fff; /* Adjust color for visibility */
+    font-size: 24px; /* Adjust the font size */
+    font-weight: 600;
+}
+
+/* Link Styles */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.hero-section{
+    height: 80vh;
+    display:flex;
+    align-items:center;
+    padding:0 30px;
+}
+.hero-section .content{
+    color:#fff;
+
+}
+.hero-section .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+}
+.hero-section .content h1 span{
+    color:#0096FE;
+}
+.hero-section .content p{
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.hero-section .content button{
+    background:#fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding:12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.hero-section .content button:hover{
+   color:#fff;
+    background:#0096FE;
+}
